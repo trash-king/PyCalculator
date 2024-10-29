@@ -1,19 +1,32 @@
+from target import *
 #---------- Functions ----------#
 #TODO Add Scientific andf Graphing functions
 #TODO organize into multiple .py files, one for Standard, one for Graphing, and one for Scientific
-def addTwoIntegers():
-    print("add two")
-def subtractTwoIntegers():
-    print("subtract two")
-def divideTwoIntegers():
-    print("divide two")
-def multiplyTwoIntegers():
-    print("multiply two")
-def setNegative():
+
+def answerEquation(returnVariable):
+    resultOfEquation.insert(returnVariable)
+
+def addTwoIntegers(int_x, int_y):
+    answerEquation(int_x + int_y)
+    return float(int_x + int_y)
+
+def subtractTwoIntegers(int_x, int_y):
+    answerEquation(int_x - int_y)
+    return float(int_x - int_y)
+
+def divideTwoIntegers(int_x, int_y):
+    answerEquation(int_x / int_y)
+    return float(int_x / int_y)
+
+def multiplyTwoIntegers(int_x, int_y):
+    answerEquation(float(int_x * int_y))
+    return float(int_x * int_y)
+
+def setNegative(int_x):
     print("negative")
-def setExponent():
+def setExponent(int_x, int_exponent):
     print("exponent")
-def findPercentage():
+def findPercentage(int_x, int_of_y):
     print("percent")
-def findModulus():
+def findModulus(int_x, int_mod):
     print("modulus")
