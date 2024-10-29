@@ -1,7 +1,8 @@
-from tkinter import *
-from target import *
+from window import *
 import os
 
 
 createWindow()
+
+
 pyCalculatorRoot.mainloop()

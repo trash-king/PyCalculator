@@ -1,10 +1,12 @@
-from target import *
+#from target import *
+from main import resultOfEquation
+
 #---------- Functions ----------#
 #TODO Add Scientific andf Graphing functions
 #TODO organize into multiple .py files, one for Standard, one for Graphing, and one for Scientific
 
 def answerEquation(returnVariable):
-    resultOfEquation.insert(returnVariable)
+    return(returnVariable)
 
 def addTwoIntegers(int_x, int_y):
     answerEquation(int_x + int_y)

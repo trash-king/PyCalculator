@@ -1,5 +1,6 @@
 from tkinter import *
-from target import *
+from target import version
+from standard_function import *
 
 
 pyCalculatorRoot = Tk()
@@ -7,15 +8,17 @@ pyCalculatorRoot = Tk()
 pyCalculatorRoot.title("PyCalculator Version " + version)
 pyCalculatorRoot.geometry('500x500')
 
+resultOfEquation = Text(pyCalculatorRoot, width = 5, height = 1)
+resultOfEquation.grid(column=5, row = 1)
 
 #---------- BUTTON PLACEMENT ----------#
+
+
 
 def createWindow():
 
     firstIntegerEntry = Entry(pyCalculatorRoot, width=20)
     secondIntegerEntry = Entry(pyCalculatorRoot, width=20)
-
-    resultOfEquation = Text(pyCalculatorRoot, width = 5, height = 1)
 
     additionButton = Button(pyCalculatorRoot, text = "+", fg = "black", command = addTwoIntegers(firstIntegerEntry.get(), secondIntegerEntry.get()))
     subtractionButton = Button(pyCalculatorRoot, text = "-", fg = "black", command = subtractTwoIntegers(firstIntegerEntry.get(), secondIntegerEntry.get()))
@@ -30,10 +33,9 @@ def createWindow():
     equalsButton = Button(pyCalculatorRoot, text = "=", fg="black", command = answerEquation)
 
 
-
     firstIntegerEntry.grid(column = 1, row = 1)
     secondIntegerEntry.grid(column = 3, row = 1)
-    resultOfEquation.grid(column=5, row = 1)
+
 
     #mainNumericalEntry = Entry(pyCalculatorRoot, width=50)
     #mainNumericalEntry.place(relx=0.5, anchor=CENTER)
